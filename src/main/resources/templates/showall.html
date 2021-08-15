@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/layout.html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <div layout:fragment="context">
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Street Name</th>
+          <th>City</th>
+          <th>ZipCode</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="add : ${addresscustomers}">
+          <td th:text="${add.name}"></td>
+          <td th:text="${add.age}"></td>
+          <td th:text="${add.streetName}"></td>
+          <td th:text="${add.city}"></td>
+          <td th:text="${add.zipCode}"></td>
+        </tr>
+
+        </tbody>
+      </table>
+
+      <a href="#" th:href="@{/index}" class="btn btn-info">New Data</a>
+
+
+    </div>
+</body>
+</html>

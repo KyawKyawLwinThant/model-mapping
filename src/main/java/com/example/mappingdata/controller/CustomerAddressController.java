@@ -3,7 +3,6 @@ package com.example.mappingdata.controller;
 
 import com.example.mappingdata.dto.AddressCustomer;
 import com.example.mappingdata.service.AddressCustomerService;
-import org.hibernate.annotations.GeneratorType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
